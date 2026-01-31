@@ -1,44 +1,53 @@
 baseURL = "https://imnishantdevops.github.io/"
 languageCode = "en-us"
-title = "Nishant | SRE / DevOps"
+title = "Nishant Kamal | SRE / DevOps"
 theme = "PaperMod"
+enableRobotsTXT = true
 
 # -----------------------
-# Global Params
+# GLOBAL SITE PARAMS
 # -----------------------
 [params]
   author = "Nishant Kamal"
-  description = "Site Reliability / DevOps Engineer focused on Kubernetes, Cloud Infrastructure, GitOps, and Automation"
-  defaultTheme = "auto"         # light / dark auto
+  description = "Site Reliability Engineer focused on Kubernetes, Cloud Infrastructure, GitOps, and Automation"
+  keywords = ["SRE", "DevOps", "Kubernetes", "GitOps", "Cloud", "Platform Engineering"]
+
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
   ShowReadingTime = true
   ShowCodeCopyButtons = true
-  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
+  ShowShareButtons = false
+  ShowToc = true
 
 # -----------------------
-# Homepage (Profile Mode)
+# HOMEPAGE (PROFILE MODE)
 # -----------------------
 [params.profileMode]
   enabled = true
   title = "Hi, I’m Nishant 👋"
-  subtitle = "Site Reliability Engineer | Kubernetes | Cloud | GitOps | Automation"
-
-  imageUrl = ""                 # later add /images/profile.jpg
-  imageTitle = "Nishant"
-  imageWidth = 140
-  imageHeight = 140
+  subtitle = "Site Reliability Engineer • Kubernetes • Cloud • GitOps • Automation"
+  imageUrl = ""        # add later: /images/profile.jpg
+  imageTitle = "Nishant Kamal"
+  imageWidth = 150
+  imageHeight = 150
 
   [[params.profileMode.buttons]]
-    name = "Projects"
+    name = "🚀 Projects"
     url = "/projects/"
 
   [[params.profileMode.buttons]]
-    name = "About Me"
+    name = "📘 About Me"
     url = "/about/"
 
+  [[params.profileMode.buttons]]
+    name = "✍️ Blog"
+    url = "/blog/"
+
 # -----------------------
-# Social Icons (Top + Footer)
+# SOCIAL ICONS (HEADER + FOOTER)
 # -----------------------
 [[params.socialIcons]]
   name = "github"
@@ -48,29 +57,28 @@ theme = "PaperMod"
   name = "linkedin"
   url = "https://www.linkedin.com/in/imnishant19/"
 
-# (Optional later)
-# [[params.socialIcons]]
-#   name = "email"
-#   url = "mailto:hello@nishantdevops.com"
-
 # -----------------------
-# Navigation Menu
+# MENU (TOP NAVBAR)
 # -----------------------
 [menu]
   [[menu.main]]
-    identifier = "about"
     name = "About"
     url = "/about/"
     weight = 1
 
   [[menu.main]]
-    identifier = "projects"
     name = "Projects"
     url = "/projects/"
     weight = 2
 
   [[menu.main]]
-    identifier = "blog"
     name = "Blog"
     url = "/blog/"
     weight = 3
+
+# -----------------------
+# MARKUP (CODE HIGHLIGHTING)
+# -----------------------
+[markup.highlight]
+  noClasses = false
+  style = "dracula"
